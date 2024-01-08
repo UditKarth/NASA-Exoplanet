@@ -1,6 +1,6 @@
 # Exoplanet Query Web Application
 ## Overview
-This web application allows users to query the Exoplanet Archive using the Table Access Protocol (TAP). It is built with Flask, a Python web framework, and utilizes Pandas for data manipulation. Users can input various search criteria to retrieve data about exoplanets, such as star name, discovery year, planet radius, distance in parsecs, and planet name.
+This web application allows users to query the Exoplanet Archive using the Table Access Protocol (TAP). It is built with Flask, a Python web framework, and utilizes Pandas for data manipulation. Users can input various search criteria to retrieve data about exoplanets, such as star name, discovery year, planet radius, distance in parsecs, and planet name. **Based on project idea from https://github.com/florinpop17/app-ideas/blob/master/Projects/3-Advanced/NASA-Exoplanet-Query.md**
 
 ## Installation
 
