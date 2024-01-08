@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exoplanet Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="landingPage">
+        <div id="scene"></div>
+        <section id="stars"></section>
+        <h3 id="title">Exoplanet Query</h3>
+        <!-- Central interactive table space -->
+        <div id="queryTable">
+            <form id="exoplanetQueryForm" method="post" action="/search"> <!-- Change the action as per your route handling -->
+                <div class="form-group">
+                    <label for="starName">Star Name:</label>
+                    <input type="text" id="starName" name="starName">
+                </div>
+        
+                <div class="form-group">
+                    <label for="discoveryYear">Discovery Year:</label>
+                    <input type="number" id="discoveryYear" name="discoveryYear">
+                </div>
+        
+                <div class="form-group">
+                    <label for="planetRadiusMin">Planet Radius - Min (Earth Radii):</label>
+                    <input type="number" id="planetRadiusMin" name="planetRadiusMin" step="any">
+                    
+                    <label for="planetRadiusMax">Max (Earth Radii):</label>
+                    <input type="number" id="planetRadiusMax" name="planetRadiusMax" step="any">
+                </div>
+        
+                <div class="form-group">
+                    <label for="distanceMin">Distance - Min (Parsecs):</label>
+                    <input type="number" id="distanceMin" name="distanceMin" step="any">
+                    
+                    <label for="distanceMax">Max (Parsecs):</label>
+                    <input type="number" id="distanceMax" name="distanceMax" step="any">
+                </div>
+        
+                <div class="form-group">
+                    <label for="planetName">Planet Name:</label>
+                    <input type="text" id="planetName" name="planetName">
+                </div>
+        
+                <div class="form-group">
+                    <label for="someDropdown">Some Dropdown:</label>
+                    <select id="someDropdown" name="someDropdown">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+
+
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
