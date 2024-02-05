@@ -15,7 +15,7 @@ This web application allows users to query the Exoplanet Archive using the Table
 ### Steps
 1. Clone the repository
 ```
-git clone https://github.com/your-repository/exoplanet-query.git
+https://github.com/UditKarth/NASA-Exoplanet.git
 cd exoplanet-query
 ```
 
